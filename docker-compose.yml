@@ -1,0 +1,8 @@
+rabbit:
+  image: rabbitmq:3.5.7-management
+  hostname: rabbit
+  environment:
+    RABBITMQ_ERLANG_COOKIE: cookie
+  ports:
+    - "5672:5672"
+    - "15672:15672"
